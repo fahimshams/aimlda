@@ -1,99 +1,675 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Services Home Page</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-  }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your AI Services</title>
 
-  .header {
-    background-color: #007bff;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-  }
+    <style>
+        body {
+            background-color: #f5f5f5;
+            /* or #e6f7ff for light blue */
+        }
 
-  .services-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 40px;
-  }
+        /* Center content in the carousel */
+        #techStackCarousel .carousel-inner {
+            text-align: left;
+            /* Align text to the left */
+            padding: 20px;
+            /* Add padding for better spacing */
+        }
 
-  .service-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 15px;
-    padding: 20px;
-    width: 280px;
-    text-align: center;
-    transition: transform 0.3s ease;
-  }
+        #techStackCarousel .carousel-item {
+            margin-bottom: 20px;
+            /* Add margin between carousel items */
+        }
 
-  .service-card:hover {
-    transform: translateY(-5px);
-  }
+        #techStackCarousel .carousel-control-prev,
+        #techStackCarousel .carousel-control-next {
+            filter: invert(100%);
+            cursor: pointer;
+            /* Add pointer cursor */
+        }
 
-  .service-icon {
-    font-size: 48px;
-    color: #007bff;
-    margin-bottom: 15px;
-  }
+        /* Style for carousel navigation below cards */
+        .carousel-indicators {
+            margin-top: 10px;
+        }
 
-  .service-title {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #333;
-  }
+        /* Ensure visibility of carousel arrows */
+        .carousel-control-prev,
+        .carousel-control-next {
+            /* opacity: 1;
+            z-index: 1; */
+            /* Ensure arrows are above the cards */
+        }
 
-  .service-description {
-    color: #777;
-  }
+        /* Style for carousel navigation below cards */
+.carousel-indicators {
+    margin-top: 10px;
+}
 
-  .footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-  }
-</style>
+/* Ensure visibility of carousel arrows */
+.carousel-control-prev, .carousel-control-next {
+    opacity: 1;
+    background: none; /* Remove background color */
+    border: none; /* Remove border */
+}
+
+        /* Add a bit of space between arrows and cards */
+        #techStackCarousel .carousel-control-prev {
+            margin-left: -50px;
+        }
+
+        #techStackCarousel .carousel-control-next {
+            margin-right: -50px;
+        }
+
+        /* Decorative styles for cards */
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            /* Card background color */
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-title {
+            color: #333;
+            /* Card title color */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+    </style>
 </head>
+
 <body>
-  <div class="header">
-    <h1>AI Services</h1>
-    <p>Your Gateway to Intelligent Solutions</p>
-  </div>
 
-  <div class="services-container">
-    <div class="service-card">
-      <div class="service-icon">🤖</div>
-      <div class="service-title">Machine Learning</div>
-      <div class="service-description">Harness the power of machine learning to make predictions and decisions.</div>
+    <div class="container text-center mt-5">
+        <h1 class="display-4">Welcome to Your AI Services</h1>
+        <p class="lead">Explore our cutting-edge AI solutions to transform your business.</p>
     </div>
 
-    <div class="service-card">
-      <div class="service-icon">🔍</div>
-      <div class="service-title">Natural Language Processing</div>
-      <div class="service-description">Enable your applications to understand and process human language.</div>
-    </div>
+    <div class="container my-5">
+        <section id="services" class="mb-5">
+            <h2 class="text-center mb-4">Our AI Services</h2>
 
-    <div class="service-card">
-      <div class="service-icon">🌐</div>
-      <div class="service-title">Computer Vision</div>
-      <div class="service-description">Extract meaningful information from images and videos.</div>
-    </div>
-  </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="your-image-url-1.jpg" class="card-img-top" alt="Service 1 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Service 1</h5>
+                            <p class="card-text">Description of Service 1. Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
 
-  <div class="footer">
-    <p>&copy; 2023 AI Services. All rights reserved.</p>
-  </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="your-image-url-2.jpg" class="card-img-top" alt="Service 2 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Service 2</h5>
+                            <p class="card-text">Description of Service 2. Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="your-image-url-3.jpg" class="card-img-top" alt="Service 3 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Service 3</h5>
+                            <p class="card-text">Description of Service 3. Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="mb-5">
+            <h2 class="text-center mb-4">Why Choose Us?</h2>
+            <p class="text-center">Our team of experts is dedicated to providing innovative AI solutions tailored to
+                your business needs. With cutting-edge technology and a commitment to excellence, we help you stay ahead
+                in the competitive landscape.</p>
+        </section>
+
+        <section id="features" class="mb-5">
+            <h2 class="text-center mb-4">Highlighted Features</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature">
+                        <i class="fas fa-check-circle fa-3x"></i>
+                        <p>Advanced Machine Learning</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature">
+                        <i class="fas fa-check-circle fa-3x"></i>
+                        <p>Natural Language Processing</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature">
+                        <i class="fas fa-check-circle fa-3x"></i>
+                        <p>Deep Neural Networks</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="mb-5">
+            <h2 class="text-center mb-4">Meet Our Team</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="team-member-1.jpg" alt="Team Member 1">
+                        <h4>John Doe</h4>
+                        <p>Lead AI Engineer</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="team-member-2.jpg" alt="Team Member 2">
+                        <h4>Jane Smith</h4>
+                        <p>Data Scientist</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="team-member-3.jpg" alt="Team Member 3">
+                        <h4>Robert Johnson</h4>
+                        <p>UX/UI Designer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-5">
+            <h2 class="text-center mb-4">Our Successful Projects</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="card">
+                        <img src="project-1.jpg" class="card-img-top" alt="Project 1 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">Description of Project 1. Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="testimonials" class="mb-5">
+            <h2 class="text-center mb-4">What Our Clients Say</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">"Working with Your AI Services has been a game-changer for our
+                                business. The personalized solutions and exceptional support have exceeded our
+                                expectations."</p>
+                            <p class="text-right font-weight-bold">- John Doe, CEO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="mb-5">
+            <h2 class="text-center mb-4">Pricing</h2>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Basic Package</h5>
+                            <p class="card-text">Perfect for small businesses</p>
+                            <h6 class="card-subtitle mb-2 text-muted">$99/month</h6>
+                            <a href="#" class="btn btn-primary btn-block">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Advanced Package</h5>
+                            <p class="card-text">Ideal for growing enterprises</p>
+                            <h6 class="card-subtitle mb-2 text-muted">$199/month</h6>
+                            <a href="#" class="btn btn-primary btn-block">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Enterprise Package</h5>
+                            <p class="card-text">Tailored solutions for large corporations</p>
+                            <h6 class="card-subtitle mb-2 text-muted">Custom Pricing</h6>
+                            <a href="#" class="btn btn-primary btn-block">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="quote" class="mb-5">
+            <h2 class="text-center mb-4">Get a Quote</h2>
+            <form id="quoteForm" class="rounded p-4 shadow-lg">
+                <div class="form-group">
+                    <label for="company">Company Name:</label>
+                    <input type="text" class="form-control" id="company" required>
+                </div>
+                <div class="form-group">
+                    <label for="requirements">Requirements:</label>
+                    <textarea class="form-control" id="requirements" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Submit Quote</button>
+            </form>
+        </section>
+
+        <section id="achievements" class="mb-5">
+            <h2 class="text-center mb-4">Our Achievements</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="counter">
+                        <i class="fas fa-users fa-3x"></i>
+                        <h3><span class="count">150</span>+</h3>
+                        <p>Clients Served</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="counter">
+                        <i class="fas fa-project-diagram fa-3x"></i>
+                        <h3><span class="count">50</span>+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="counter">
+                        <i class="fas fa-trophy fa-3x"></i>
+                        <h3><span class="count">10</span>+</h3>
+                        <p>Awards Won</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="mb-5">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="card">
+                    <div class="card-header" id="faqHeading1">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse"
+                                data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                                How can your AI services benefit my business?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="faqCollapse1" class="collapse show" aria-labelledby="faqHeading1"
+                        data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Our AI services can optimize your operations, enhance decision-making processes, and provide
+                            valuable insights to boost your business productivity and efficiency.
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more FAQ items as needed -->
+            </div>
+        </section>
+
+        <section id="blog" class="mb-5">
+            <h2 class="text-center mb-4">Latest from Our Blog</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="blog-post-1.jpg" class="card-img-top" alt="Blog Post 1 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">AI in Healthcare: Revolutionizing Patient Care</h5>
+                            <p class="card-text">Learn how artificial intelligence is transforming the healthcare
+                                industry and improving patient outcomes.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="blog-post-2.jpg" class="card-img-top" alt="Blog Post 2 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">The Future of AI: Trends to Watch</h5>
+                            <p class="card-text">Explore the latest trends in artificial intelligence and how they are
+                                shaping the future of technology.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="blog-post-3.jpg" class="card-img-top" alt="Blog Post 3 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">AI in Finance: Transforming the Banking Sector</h5>
+                            <p class="card-text">Discover how AI is revolutionizing financial services, from fraud
+                                detection to personalized banking experiences.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="clients" class="mb-5">
+            <h2 class="text-center mb-4">Our Valued Clients</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="client-logo-1.png" alt="Client Logo 1" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <img src="client-logo-2.png" alt="Client Logo 2" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <img src="client-logo-3.png" alt="Client Logo 3" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <img src="client-logo-4.png" alt="Client Logo 4" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <section id="calendar" class="mb-5">
+            <h2 class="text-center mb-4">Upcoming Events</h2>
+            <div id="eventCalendar"></div>
+        </section>
+
+        <section id="progress" class="mb-5">
+            <h2 class="text-center mb-4">Our Ongoing Projects</h2>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100">Project 1</div>
+            </div>
+            <div class="progress mt-3">
+                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0"
+                    aria-valuemax="100">Project 2</div>
+            </div>
+            <div class="progress mt-3">
+                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+                    aria-valuemax="100">Project 3</div>
+            </div>
+        </section>
+
+        <section id="video" class="mb-5">
+            <h2 class="text-center mb-4">Watch Our Introduction Video</h2>
+            <div class="embed-responsive embed-responsive-16by9">
+                <!-- Add your video embed code here -->
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/your-video-id"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- Technology Stack Section -->
+
+        <div class="container my-5">
+            <!-- Technology Stack Section with Slider -->
+            <section id="technology" class="mb-5">
+                <h2 class="text-center mb-4">Technology Stack</h2>
+                <div id="techStackCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <!-- Card 1 -->
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Natural Language Processing (NLP) Services</h5>
+                                            <ul>
+                                                <li>Text analysis and sentiment analysis</li>
+                                                <li>Language translation services</li>
+                                                <li>Named entity recognition</li>
+                                                <li>Text summarization</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card 2 -->
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Machine Learning Model Development</h5>
+                                            <ul>
+                                                <li>Custom machine learning model development tailored to specific
+                                                    business needs</li>
+                                                <li>Predictive analytics for sales forecasting, customer behavior, etc.
+                                                </li>
+                                                <li>Image recognition and classification</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card 3 -->
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Chatbot Development</h5>
+                                            <ul>
+                                                <li>Building intelligent chatbots for customer support</li>
+                                                <li>Chatbots for lead generation and sales</li>
+                                                <li>Integration with messaging platforms and websites</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <!-- Card 4 -->
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Data Analytics and Insights</h5>
+                                            <ul>
+                                                <li>Data cleaning, preprocessing, and transformation</li>
+                                                <li>Exploratory data analysis</li>
+                                                <li>Building dashboards for visualizing key metrics</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card 5 -->
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Recommendation Systems</h5>
+                                            <ul>
+                                                <li>Personalized content recommendations for e-commerce</li>
+                                                <li>Movie or music recommendations based on user preferences</li>
+                                                <li>Cross-selling and upselling recommendations</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card 6 -->
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Speech Recognition</h5>
+                                            <ul>
+                                                <li>Developing speech-to-text and text-to-speech applications</li>
+                                                <li>Voice-activated assistants for applications or devices</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <!-- Card 7 -->
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Computer Vision Services</h5>
+                                            <ul>
+                                                <li>Object detection and recognition in images and videos</li>
+                                                <li>Facial recognition for security or user authentication</li>
+                                                <li>Image and video analysis for insights</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card 8 -->
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">AI Consulting and Strategy</h5>
+                                            <ul>
+                                                <li>Providing expertise on how AI can benefit a specific business</li>
+                                                <li>Developing an AI strategy aligned with business goals</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card 9 -->
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Automation Solutions</h5>
+                                            <ul>
+                                                <li>Robotic Process Automation (RPA) for repetitive tasks</li>
+                                                <li>Workflow automation for increased efficiency</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 4 (Add more slides as needed) -->
+                    </div>
+                    <!-- Navigation controls below cards -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#techStackCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#techStackCarousel" data-slide-to="1"></li>
+                        <li data-target="#techStackCarousel" data-slide-to="2"></li>
+
+                    </ol>
+                    <a class="carousel-control-prev" href="#techStackCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#techStackCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Project Gallery Section -->
+            <section id="gallery" class="mb-5">
+                <h2 class="text-center mb-4">Project Gallery</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="gallery-item">
+                            <img src="project-1.jpg" alt="Project 1">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="gallery-item">
+                            <img src="project-2.jpg" alt="Project 2">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="gallery-item">
+                            <img src="project-3.jpg" alt="Project 3">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <script type="text/javascript">
+                var Tawk_API = Tawk_API || {};
+                Tawk_API.visitor = {
+                    name: 'Guest',
+                    email: 'guest@example.com'
+                };
+                Tawk_API.onLoad = function () {
+                    Tawk_API.setAttributes({
+                        'name': 'Guest',
+                        'email': 'guest@example.com'
+                    }, function (error) { });
+                };
+                (function () {
+                    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+                    s1.async = true;
+                    s1.src = 'https://embed.tawk.to/your-tawk-api-key/default';
+                    s1.charset = 'UTF-8';
+                    s1.setAttribute('crossorigin', '*');
+                    s0.parentNode.insertBefore(s1, s0);
+                })();
+            </script>
+
+            <form id="contactForm" class="rounded p-4 shadow-lg">
+                <h2 class="text-center mb-4">Contact Us</h2>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            </form>
+
+            <div class="text-center my-4">
+                <p>Ready to revolutionize your business with AI? <a href="#contactForm">Contact us</a> today!</p>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.counterup/1.0/jquery.counterup.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="scripts.js"></script>
+
+        <script>
+            // Counter Animation
+            $('.counter span').counterUp({ delay: 10, time: 1000 });
+        </script>
 </body>
+
 </html>
