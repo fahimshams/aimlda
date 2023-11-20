@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Your AI Services</title>
 
     <style>
@@ -48,16 +49,19 @@
         }
 
         /* Style for carousel navigation below cards */
-.carousel-indicators {
-    margin-top: 10px;
-}
+        .carousel-indicators {
+            margin-top: 10px;
+        }
 
-/* Ensure visibility of carousel arrows */
-.carousel-control-prev, .carousel-control-next {
-    opacity: 1;
-    background: none; /* Remove background color */
-    border: none; /* Remove border */
-}
+        /* Ensure visibility of carousel arrows */
+        .carousel-control-prev,
+        .carousel-control-next {
+            opacity: 1;
+            background: none;
+            /* Remove background color */
+            border: none;
+            /* Remove border */
+        }
 
         /* Add a bit of space between arrows and cards */
         #techStackCarousel .carousel-control-prev {
@@ -98,6 +102,36 @@
         ul li {
             margin-bottom: 8px;
         }
+
+
+        .faq-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            /* Adjust the spacing between FAQ items */
+        }
+
+        .flex-item {
+            width: 100%;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        /* Customize the button style as needed */
+        .btn-link {
+            text-decoration: none;
+            color: #007bff;
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -114,34 +148,73 @@
 
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="your-image-url-1.jpg" class="card-img-top" alt="Service 1 Image">
-                        <div class="card-body">
-                            <h5 class="card-title">Service 1</h5>
-                            <p class="card-text">Description of Service 1. Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit.</p>
+                    <div class="card h-100">
+                        <img src="https://media.istockphoto.com/id/1295900106/photo/data-scientists-male-programmer-using-laptop-analyzing-and-developing-in-various-information.jpg?b=1&s=612x612&w=0&k=20&c=OuuM-gdJmwzZrW7_Brh0VkXedyx8JX5mzV7-9eM-VdY="
+                            class="card-img-top" alt="Service 1 Image">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Consulting and Advisory Services</h5>
+                            <p class="card-text">Offer expertise in understanding how AI can benefit businesses.
+                                Provide guidance on AI strategy and implementation.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="your-image-url-2.jpg" class="card-img-top" alt="Service 2 Image">
-                        <div class="card-body">
-                            <h5 class="card-title">Service 2</h5>
-                            <p class="card-text">Description of Service 2. Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit.</p>
+                    <div class="card h-100">
+                        <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                            class="card-img-top" alt="Service 2 Image">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Custom AI Solutions</h5>
+                            <p class="card-text">Provide tailored AI solutions for specific business needs.Work on
+                                small-scale projects with clear objectives.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="your-image-url-3.jpg" class="card-img-top" alt="Service 3 Image">
-                        <div class="card-body">
-                            <h5 class="card-title">Service 3</h5>
-                            <p class="card-text">Description of Service 3. Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit.</p>
+                    <div class="card h-100">
+                        <img src="https://media.istockphoto.com/id/1413855189/photo/chat-bot-service-concept-virtual-assistant-and-crm-software-automation-technology-customer.jpg?b=1&s=612x612&w=0&k=20&c=xp4_9fh9imZOgEyzycEa0HCDWkkEG2J3GqzppxRNAnc="
+                            class="card-img-top" alt="Service 3 Image">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Chatbots and Virtual Assistants</h5>
+                            <p class="card-text">Develop simple chatbots for customer support or lead
+                                generation.Implement virtual assistants to automate repetitive tasks.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                            class="card-img-top" alt="Service 3 Image">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Data Analysis and Insights</h5>
+                            <p class="card-text">Help businesses make sense of their data using basic machine learning
+                                algorithms. Offer descriptive analytics and insights from data.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://media.istockphoto.com/id/1481590451/photo/chatbot-customer-service-automation-nlp-natural-language-processing-technology-concept.jpg?b=1&s=612x612&w=0&k=20&c=FQI3kJp184Ko6y-tyPM-0NjXiytiXp1JrGaJGsy8FK0="
+                            class="card-img-top" alt="Service 3 Image">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Natural Language Processing (NLP) Solutions</h5>
+                            <p class="card-text">Develop simple sentiment analysis tools for social media or customer
+                                feedback. Create basic language understanding applications.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://media.istockphoto.com/id/1220591821/photo/robot-and-human-hand-with-gears.jpg?b=1&s=612x612&w=0&k=20&c=7wFWTrqWHIMLnZ6Jmy2s55Pu50_5HeCs9pf8X_1Xrss="
+                            class="card-img-top" alt="Service 3 Image">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">AI for Automation</h5>
+                            <p class="card-text">Implement robotic process automation (RPA) for automating repetitive
+                                tasks. Offer solutions for workflow optimization.</p>
                         </div>
                     </div>
                 </div>
@@ -149,19 +222,64 @@
         </section>
 
         <section id="about" class="mb-5">
-            <h2 class="text-center mb-4">Why Choose Us?</h2>
-            <p class="text-center">Our team of experts is dedicated to providing innovative AI solutions tailored to
-                your business needs. With cutting-edge technology and a commitment to excellence, we help you stay ahead
-                in the competitive landscape.</p>
+            <div class="container">
+                <h2 class="text-center mb-4">Why Choose Us?</h2>
+
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="interactive-item">
+                            <i class="fas fa-lightbulb fa-3x mb-3"></i>
+                            <h5>Expertise that Transcends Technology</h5>
+                            <p>Our seasoned team of AI specialists brings a wealth of experience, not just in coding and
+                                machine learning, but in deciphering complex business landscapes. We're not just
+                                developers; we're strategic partners committed to unlocking your business potential.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="interactive-item">
+                            <i class="fas fa-cogs fa-3x mb-3"></i>
+                            <h5>Tailored Solutions, Seamless Integration</h5>
+                            <p>No two businesses are alike, and neither are our solutions. We pride ourselves on
+                                delivering bespoke AI applications that seamlessly integrate with your existing
+                                workflows. From chatbots to predictive analytics, we ensure that our solutions align
+                                perfectly with your goals.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="interactive-item">
+                            <i class="fas fa-chart-line fa-3x mb-3"></i>
+                            <h5>Innovation at Every Turn</h5>
+                            <p>AI is a rapidly evolving field, and so are we. Our commitment to staying ahead of the
+                                curve means you get access to the latest advancements, ensuring that your business
+                                remains not just competitive but pioneering in its industry.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="interactive-item">
+                            <i class="fas fa-handshake fa-3x mb-3"></i>
+                            <h5>Client-Centric Approach</h5>
+                            <p>Your success is our success. We prioritize your goals, timelines, and budget, ensuring
+                                that every solution we provide adds tangible value to your operations. Our
+                                client-centric approach means you're not just a customer; you're a partner in
+                                innovation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
+
+
         <section id="features" class="mb-5">
-            <h2 class="text-center mb-4">Highlighted Features</h2>
+            <h2 class="text-center mb-4">Key Features</h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="feature">
                         <i class="fas fa-check-circle fa-3x"></i>
-                        <p>Advanced Machine Learning</p>
+                        <p>Cutting-edge Machine Learning</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -207,153 +325,110 @@
         </section>
 
         <section id="projects" class="mb-5">
-            <h2 class="text-center mb-4">Our Successful Projects</h2>
+            <h2 class="text-center mb-4">Ignite Possibilities with Us</h2>
             <div class="row">
                 <div class="col-md-6 mx-auto">
                     <div class="card">
-                        <img src="project-1.jpg" class="card-img-top" alt="Project 1 Image">
+                        <img src="https://media.istockphoto.com/id/1295289697/photo/go-ahead-and-continuously-improvement-concept-silhouette-man-jump-on-a-cliff-from-past-to.jpg?b=1&s=612x612&w=0&k=20&c=o3rfbpdfIKM2Goueomd9FSF5UOyRqgOE0XrBS8G_GwU="
+                            class="card-img-top" alt="Future Project Image">
                         <div class="card-body">
-                            <h5 class="card-title">Project 1</h5>
-                            <p class="card-text">Description of Project 1. Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit.</p>
+                            <h5 class="card-title">Unleashing Tomorrow's Innovation</h5>
+                            <p class="card-text">Join us on a journey of endless possibilities! While our journey has
+                                just begun, we're on a mission to redefine the landscape of [Your Industry]. Anticipate
+                                revolutionary projects that transcend boundaries and spark inspiration. Together, let's
+                                create the future.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
 
         <section id="testimonials" class="mb-5">
-            <h2 class="text-center mb-4">What Our Clients Say</h2>
+            <h2 class="text-center mb-4">What We Aspire To Achieve</h2>
             <div class="row">
                 <div class="col-md-6 mx-auto">
                     <div class="card">
                         <div class="card-body">
-                            <p class="card-text">"Working with Your AI Services has been a game-changer for our
-                                business. The personalized solutions and exceptional support have exceeded our
-                                expectations."</p>
-                            <p class="text-right font-weight-bold">- John Doe, CEO</p>
+                            <p class="card-text">"We are driven by a passion for innovation. While we don't have clients
+                                yet, our team is dedicated to providing exceptional AI solutions that will define the
+                                future of our partnerships."</p>
+                            <p class="text-right font-weight-bold">- Your Business Name, Founder</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="pricing" class="mb-5">
-            <h2 class="text-center mb-4">Pricing</h2>
+        <!-- Remove the "Our Achievements," "Pricing," and "Get a Quote" sections for now -->
 
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Basic Package</h5>
-                            <p class="card-text">Perfect for small businesses</p>
-                            <h6 class="card-subtitle mb-2 text-muted">$99/month</h6>
-                            <a href="#" class="btn btn-primary btn-block">Get Started</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Advanced Package</h5>
-                            <p class="card-text">Ideal for growing enterprises</p>
-                            <h6 class="card-subtitle mb-2 text-muted">$199/month</h6>
-                            <a href="#" class="btn btn-primary btn-block">Get Started</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Enterprise Package</h5>
-                            <p class="card-text">Tailored solutions for large corporations</p>
-                            <h6 class="card-subtitle mb-2 text-muted">Custom Pricing</h6>
-                            <a href="#" class="btn btn-primary btn-block">Contact Us</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="quote" class="mb-5">
-            <h2 class="text-center mb-4">Get a Quote</h2>
-            <form id="quoteForm" class="rounded p-4 shadow-lg">
-                <div class="form-group">
-                    <label for="company">Company Name:</label>
-                    <input type="text" class="form-control" id="company" required>
-                </div>
-                <div class="form-group">
-                    <label for="requirements">Requirements:</label>
-                    <textarea class="form-control" id="requirements" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary btn-block">Submit Quote</button>
-            </form>
-        </section>
-
-        <section id="achievements" class="mb-5">
-            <h2 class="text-center mb-4">Our Achievements</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="counter">
-                        <i class="fas fa-users fa-3x"></i>
-                        <h3><span class="count">150</span>+</h3>
-                        <p>Clients Served</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="counter">
-                        <i class="fas fa-project-diagram fa-3x"></i>
-                        <h3><span class="count">50</span>+</h3>
-                        <p>Projects Completed</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="counter">
-                        <i class="fas fa-trophy fa-3x"></i>
-                        <h3><span class="count">10</span>+</h3>
-                        <p>Awards Won</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="faq" class="mb-5">
-            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
-            <div class="accordion" id="faqAccordion">
-                <div class="card">
-                    <div class="card-header" id="faqHeading1">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse"
+        <div class="container">
+            <section id="faq" class="mb-5">
+                <h2 class="text-center mb-4">Questions About Our Services</h2>
+                <div class="flex-container">
+    
+                    <!-- FAQ Item 1 -->
+                    <div class="flex-item">
+                        <button class="btn btn-link" type="button" data-toggle="collapse"
                                 data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
-                                How can your AI services benefit my business?
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="faqCollapse1" class="collapse show" aria-labelledby="faqHeading1"
-                        data-parent="#faqAccordion">
-                        <div class="card-body">
-                            Our AI services can optimize your operations, enhance decision-making processes, and provide
-                            valuable insights to boost your business productivity and efficiency.
+                            How can your AI services benefit my business?
+                        </button>
+                        <div id="faqCollapse1" class="collapse">
+                            <div class="faq-body">
+                                Our AI services can optimize your operations, enhance decision-making processes, and provide
+                                valuable insights to boost your business productivity and efficiency.
+                            </div>
                         </div>
                     </div>
+    
+                    <!-- FAQ Item 2 -->
+                    <div class="flex-item">
+                        <button class="btn btn-link" type="button" data-toggle="collapse"
+                                data-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                            What industries do you specialize in?
+                        </button>
+                        <div id="faqCollapse2" class="collapse">
+                            <div class="faq-body">
+                                We specialize in serving a diverse range of industries, including <span
+                                    class="text-primary">[List of Industries]</span>. Our adaptable AI solutions can be
+                                tailored to meet the unique needs of various business sectors.
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- FAQ Item 3 -->
+                    <div class="flex-item">
+                        <button class="btn btn-link" type="button" data-toggle="collapse"
+                                data-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                            How do you ensure data security in your AI solutions?
+                        </button>
+                        <div id="faqCollapse3" class="collapse">
+                            <div class="faq-body">
+                                Ensuring data security is a top priority. We implement robust encryption protocols, access
+                                controls, and regular security audits to safeguard your data. Our commitment is to maintain
+                                the highest standards of confidentiality and integrity.
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Add more FAQ items as needed -->
+    
                 </div>
-                <!-- Add more FAQ items as needed -->
-            </div>
-        </section>
+            </section>
+        </div>
+
 
         <section id="blog" class="mb-5">
-            <h2 class="text-center mb-4">Latest from Our Blog</h2>
+            <h2 class="text-center mb-4">Discover Our World of Innovation</h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
                         <img src="blog-post-1.jpg" class="card-img-top" alt="Blog Post 1 Image">
                         <div class="card-body">
-                            <h5 class="card-title">AI in Healthcare: Revolutionizing Patient Care</h5>
-                            <p class="card-text">Learn how artificial intelligence is transforming the healthcare
-                                industry and improving patient outcomes.</p>
+                            <h5 class="card-title">Unveiling AI Marvels: [Your Industry] on the Verge of Transformation
+                            </h5>
+                            <p class="card-text">Embark on a journey into the future of [Your Industry]. Dive into the
+                                potential impact of AI and how we are contributing to its revolutionary transformation.
+                            </p>
                             <a href="#" class="btn btn-primary">Read More</a>
                         </div>
                     </div>
@@ -363,9 +438,9 @@
                     <div class="card">
                         <img src="blog-post-2.jpg" class="card-img-top" alt="Blog Post 2 Image">
                         <div class="card-body">
-                            <h5 class="card-title">The Future of AI: Trends to Watch</h5>
-                            <p class="card-text">Explore the latest trends in artificial intelligence and how they are
-                                shaping the future of technology.</p>
+                            <h5 class="card-title">The Pinnacle of Innovation: Our Approach to AI Excellence</h5>
+                            <p class="card-text">Explore our unique vision and approach to achieving excellence in AI.
+                                Join us on the path to cutting-edge solutions and groundbreaking innovations.</p>
                             <a href="#" class="btn btn-primary">Read More</a>
                         </div>
                     </div>
@@ -375,9 +450,10 @@
                     <div class="card">
                         <img src="blog-post-3.jpg" class="card-img-top" alt="Blog Post 3 Image">
                         <div class="card-body">
-                            <h5 class="card-title">AI in Finance: Transforming the Banking Sector</h5>
-                            <p class="card-text">Discover how AI is revolutionizing financial services, from fraud
-                                detection to personalized banking experiences.</p>
+                            <h5 class="card-title">Beyond Boundaries: AI's Role in Shaping Future Intelligence</h5>
+                            <p class="card-text">Delve into our commitment to shaping the future of intelligence.
+                                Discover the untapped potential of AI and how it's influencing the way we think about
+                                tomorrow.</p>
                             <a href="#" class="btn btn-primary">Read More</a>
                         </div>
                     </div>
@@ -385,7 +461,7 @@
             </div>
         </section>
 
-        <section id="clients" class="mb-5">
+        <!-- <section id="clients" class="mb-5">
             <h2 class="text-center mb-4">Our Valued Clients</h2>
             <div class="row">
                 <div class="col-md-3">
@@ -422,7 +498,7 @@
                 <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
                     aria-valuemax="100">Project 3</div>
             </div>
-        </section>
+        </section> -->
 
         <section id="video" class="mb-5">
             <h2 class="text-center mb-4">Watch Our Introduction Video</h2>
@@ -594,7 +670,7 @@
             </section>
 
             <!-- Project Gallery Section -->
-            <section id="gallery" class="mb-5">
+            <!-- <section id="gallery" class="mb-5">
                 <h2 class="text-center mb-4">Project Gallery</h2>
                 <div class="row">
                     <div class="col-md-4">
@@ -613,7 +689,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
 
             <script type="text/javascript">
@@ -659,17 +735,18 @@
                 <p>Ready to revolutionize your business with AI? <a href="#contactForm">Contact us</a> today!</p>
             </div>
         </div>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.counterup/1.0/jquery.counterup.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-        <script src="scripts.js"></script>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.counterup/1.0/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="scripts.js"></script>
 
-        <script>
-            // Counter Animation
-            $('.counter span').counterUp({ delay: 10, time: 1000 });
-        </script>
+    <script>
+        // Counter Animation
+        $('.counter span').counterUp({ delay: 10, time: 1000 });
+    </script>
 </body>
 
 </html>
