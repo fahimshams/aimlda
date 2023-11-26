@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>InnovateHub Solutions</title>
+
+    <style>
+        body {
+            background-color: #F5F5F5;
+            /* or #e6f7ff for light blue */
+        }
+
+        /* Center content in the carousel */
+        #techStackCarousel .carousel-inner {
+            text-align: left;
+            /* Align text to the left */
+            padding: 20px;
+            /* Add padding for better spacing */
+        }
+
+        #techStackCarousel .carousel-item {
+            margin-bottom: 20px;
+            /* Add margin between carousel items */
+        }
+
+        #techStackCarousel .carousel-control-prev,
+        #techStackCarousel .carousel-control-next {
+            filter: invert(100%);
+            cursor: pointer;
+            /* Add pointer cursor */
+        }
+
+        /* Style for carousel navigation below cards */
+        .carousel-indicators {
+            margin-top: 10px;
+        }
+
+        /* Ensure visibility of carousel arrows */
+        .carousel-control-prev,
+        .carousel-control-next {
+            /* opacity: 1;
+            z-index: 1; */
+            /* Ensure arrows are above the cards */
+        }
+
+        /* Style for carousel navigation below cards */
+        .carousel-indicators {
+            margin-top: 10px;
+        }
+
+        /* Ensure visibility of carousel arrows */
+        .carousel-control-prev,
+        .carousel-control-next {
+            opacity: 1;
+            background: none;
+            /* Remove background color */
+            border: none;
+            /* Remove border */
+        }
+
+        /* Add a bit of space between arrows and cards */
+        #techStackCarousel .carousel-control-prev {
+            margin-left: -50px;
+        }
+
+        #techStackCarousel .carousel-control-next {
+            margin-right: -50px;
+        }
+
+        /* Decorative styles for cards */
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            /* Card background color */
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-title {
+            color: #333;
+            /* Card title color */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+
+        .faq-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            /* Adjust the spacing between FAQ items */
+        }
+
+        .flex-item {
+            width: 100%;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        /* Customize the button style as needed */
+        .btn-link {
+            text-decoration: none;
+            color: #007bff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container text-center mt-5">
+        <h1 class="display-4">Welcome to InnovateHub Solutions</h1>
+        <p class="lead">Explore our cutting-edge AI solutions to transform your business.</p>
+    </div>
+
+    <div class="container my-5">
+        <section id="services" class="mb-5">
+            <h2 class="text-center mb-4">Our AI Services</h2>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://media.istockphoto.com/id/1295900106/photo/data-scientists-male-programmer-using-laptop-analyzing-and-developing-in-various-information.jpg?b=1&s=612x612&w=0&k=20&c=OuuM-gdJmwzZrW7_Brh0VkXedyx8JX5mzV7-9eM-VdY="
+                            class="card-img-top" alt="Service 1 Image">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Consulting and Advisory Services</h5>
+                            <p class="card-text">Offer expertise in understanding how AI can benefit businesses.
+                                Provide guidance on AI strategy and implementation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                            class="card-img-top" alt="Service 2 Image">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Custom AI Solutions</h5>
+                            <p class="card-text">Provide tailored AI solutions for specific business needs.Work on
+                                small-scale projects with clear objectives.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://media.istockphoto.com/id/1413855189/photo/chat-bot-service-concept-virtual-assistant-and-crm-software-automation-technology-customer.jpg?b=1&s=612x612&w=0&k=20&c=xp4_9fh9imZOgEyzycEa0HCDWkkEG2J3GqzppxRNAnc="
+                            class="card-img-top" alt="Service 3 Image">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Chatbots and Virtual Assistants</h5>
+                            <p class="card-text">Develop simple chatbots for customer support or lead
+                                generation.Implement virtual assistants to automate repetitive tasks.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                            class="card-img-top" alt="Service 3 Image">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Data Analysis and Insights</h5>
+                            <p class="card-text">Help businesses make sense of their data using basic machine learning
+                                algorithms. Offer descriptive analytics and insights from data.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://media.istockphoto.com/id/1481590451/photo/chatbot-customer-service-automation-nlp-natural-language-processing-technology-concept.jpg?b=1&s=612x612&w=0&k=20&c=FQI3kJp184Ko6y-tyPM-0NjXiytiXp1JrGaJGsy8FK0="
+                            class="card-img-top" alt="Service 3 Image">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Natural Language Processing (NLP) Solutions</h5>
+                            <p class="card-text">Develop simple sentiment analysis tools for social media or customer
+                                feedback. Create basic language understanding applications.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://media.istockphoto.com/id/1220591821/photo/robot-and-human-hand-with-gears.jpg?b=1&s=612x612&w=0&k=20&c=7wFWTrqWHIMLnZ6Jmy2s55Pu50_5HeCs9pf8X_1Xrss="
+                            class="card-img-top" alt="Service 3 Image">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">AI for Automation</h5>
+                            <p class="card-text">Implement robotic process automation (RPA) for automating repetitive
+                                tasks. Offer solutions for workflow optimization.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="mb-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Why Choose Us?</h2>
+
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="interactive-item">
+                            <i class="fas fa-lightbulb fa-3x mb-3"></i>
+                            <h5>Expertise that Transcends Technology</h5>
+                            <p>Our seasoned team of AI specialists brings a wealth of experience, not just in coding and
+                                machine learning, but in deciphering complex business landscapes. We're not just
+                                developers; we're strategic partners committed to unlocking your business potential.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="interactive-item">
+                            <i class="fas fa-cogs fa-3x mb-3"></i>
+                            <h5>Tailored Solutions, Seamless Integration</h5>
+                            <p>No two businesses are alike, and neither are our solutions. We pride ourselves on
+                                delivering bespoke AI applications that seamlessly integrate with your existing
+                                workflows. From chatbots to predictive analytics, we ensure that our solutions align
+                                perfectly with your goals.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="interactive-item">
+                            <i class="fas fa-chart-line fa-3x mb-3"></i>
+                            <h5>Innovation at Every Turn</h5>
+                            <p>AI is a rapidly evolving field, and so are we. Our commitment to staying ahead of the
+                                curve means you get access to the latest advancements, ensuring that your business
+                                remains not just competitive but pioneering in its industry.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="interactive-item">
+                            <i class="fas fa-handshake fa-3x mb-3"></i>
+                            <h5>Client-Centric Approach</h5>
+                            <p>Your success is our success. We prioritize your goals, timelines, and budget, ensuring
+                                that every solution we provide adds tangible value to your operations. Our
+                                client-centric approach means you're not just a customer; you're a partner in
+                                innovation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="features" class="mb-5">
+            <h2 class="text-center mb-4">Key Features</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature">
+                        <i class="fas fa-check-circle fa-3x"></i>
+                        <p>Cutting-edge Machine Learning</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature">
+                        <i class="fas fa-check-circle fa-3x"></i>
+                        <p>Natural Language Processing</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature">
+                        <i class="fas fa-check-circle fa-3x"></i>
+                        <p>Deep Neural Networks</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="team" class="mb-5">
+            <h2 class="text-center mb-4">Meet Our Team</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="team-member-1.jpg" alt="Team Member 1">
+                        <h4>John Doe</h4>
+                        <p>Lead AI Engineer</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="team-member-2.jpg" alt="Team Member 2">
+                        <h4>Jane Smith</h4>
+                        <p>Data Scientist</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="team-member-3.jpg" alt="Team Member 3">
+                        <h4>Robert Johnson</h4>
+                        <p>UX/UI Designer</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section id="projects" class="mb-5">
+            <h2 class="text-center mb-4">Ignite Possibilities with Us</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="card">
+                        <img src="https://media.istockphoto.com/id/1295289697/photo/go-ahead-and-continuously-improvement-concept-silhouette-man-jump-on-a-cliff-from-past-to.jpg?b=1&s=612x612&w=0&k=20&c=o3rfbpdfIKM2Goueomd9FSF5UOyRqgOE0XrBS8G_GwU="
+                            class="card-img-top" alt="Future Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Unleashing Tomorrow's Innovation</h5>
+                            <p class="card-text">Join us on a journey of endless possibilities! While our journey has
+                                just begun, we're on a mission to redefine the landscape of [Your Industry]. Anticipate
+                                revolutionary projects that transcend boundaries and spark inspiration. Together, let's
+                                create the future.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="mb-5">
+            <h2 class="text-center mb-4">What We Aspire To Achieve</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">"We are driven by a passion for innovation. While we don't have clients
+                                yet, our team is dedicated to providing exceptional AI solutions that will define the
+                                future of our partnerships."</p>
+                            <p class="text-right font-weight-bold">- IHS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Remove the "Our Achievements," "Pricing," and "Get a Quote" sections for now -->
+
+        <div class="container">
+            <section id="faq" class="mb-5">
+                <h2 class="text-center mb-4">Questions About Our Services</h2>
+                <div class="flex-container">
+
+                    <!-- FAQ Item 1 -->
+                    <div class="flex-item">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faqCollapse1"
+                            aria-expanded="true" aria-controls="faqCollapse1">
+                            How can your AI services benefit my business?
+                        </button>
+                        <div id="faqCollapse1" class="collapse">
+                            <div class="faq-body">
+                                Our AI services can optimize your operations, enhance decision-making processes, and
+                                provide
+                                valuable insights to boost your business productivity and efficiency.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="flex-item">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faqCollapse2"
+                            aria-expanded="false" aria-controls="faqCollapse2">
+                            What industries do you specialize in?
+                        </button>
+                        <div id="faqCollapse2" class="collapse">
+                            <div class="faq-body">
+                                We specialize in serving a diverse range of industries, including <span
+                                    class="text-primary">[List of Industries]</span>. Our adaptable AI solutions can be
+                                tailored to meet the unique needs of various business sectors.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="flex-item">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faqCollapse3"
+                            aria-expanded="false" aria-controls="faqCollapse3">
+                            How do you ensure data security in your AI solutions?
+                        </button>
+                        <div id="faqCollapse3" class="collapse">
+                            <div class="faq-body">
+                                Ensuring data security is a top priority. We implement robust encryption protocols,
+                                access
+                                controls, and regular security audits to safeguard your data. Our commitment is to
+                                maintain
+                                the highest standards of confidentiality and integrity.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add more FAQ items as needed -->
+
+                </div>
+            </section>
+        </div>
+
+
+        <section id="blog" class="mb-5">
+            <h2 class="text-center mb-4">Discover Our World of Innovation</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://cdn.pixabay.com/photo/2023/09/02/18/26/ai-generated-8229399_640.png" class="card-img-top" alt="Blog Post 1 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Unveiling AI Marvels: A Journey into the Extraordinary World of Artificial Intelligence
+                            </h5>
+                            <p class="card-text">Embark on a journey into the future of AI. Dive into the
+                                potential impact of AI and how we are contributing to its revolutionary transformation.
+                            </p>
+                            <a href="https://fnrblogspost.blogspot.com/2023/11/title-unveiling-ai-marvels-journey-into.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://cdn.pixabay.com/photo/2023/03/31/11/31/ai-generated-7889788_640.jpg" class="card-img-top" alt="Blog Post 2 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">The Pinnacle of Innovation: Our Approach to AI Excellence</h5>
+                            <p class="card-text">Explore our unique vision and approach to achieving excellence in AI.
+                                Join us on the path to cutting-edge solutions and groundbreaking innovations.</p>
+                            <a href="https://fnrblogspost.blogspot.com/2023/11/the-pinnacle-of-innovation-our-approach.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://media.istockphoto.com/id/537586633/photo/smart-goal-setting-concept.jpg?s=2048x2048&w=is&k=20&c=ZX8HcoCc6UfY4e9BYNqqMb4PyMB3B-Sg_Es6L15d5VY=" class="card-img-top" alt="Blog Post 3 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Beyond Boundaries: AI's Role in Shaping Future Intelligence</h5>
+                            <p class="card-text">Delve into our commitment to shaping the future of intelligence.
+                                Discover the untapped potential of AI and how it's influencing the way we think about
+                                tomorrow.</p>
+                            <a href="https://fnrblogspost.blogspot.com/2023/11/beyond-boundaries-ais-role-in-shaping.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="clients" class="mb-5">
+            <h2 class="text-center mb-4">Our Valued Clients</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="client-logo-1.png" alt="Client Logo 1" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <img src="client-logo-2.png" alt="Client Logo 2" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <img src="client-logo-3.png" alt="Client Logo 3" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <img src="client-logo-4.png" alt="Client Logo 4" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <section id="calendar" class="mb-5">
+            <h2 class="text-center mb-4">Upcoming Events</h2>
+            <div id="eventCalendar"></div>
+        </section>
+
+        <section id="progress" class="mb-5">
+            <h2 class="text-center mb-4">Our Ongoing Projects</h2>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100">Project 1</div>
+            </div>
+            <div class="progress mt-3">
+                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0"
+                    aria-valuemax="100">Project 2</div>
+            </div>
+            <div class="progress mt-3">
+                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+                    aria-valuemax="100">Project 3</div>
+            </div>
+        </section> -->
+
+        <section id="video" class="mb-5">
+            <h2 class="text-center mb-4">Watch Our Introduction Video</h2>
+            <div class="embed-responsive embed-responsive-16by9">
+                <!-- Add your video embed code here -->
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/your-video-id"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- Technology Stack Section -->
+
+        <div class="container my-5">
+            <!-- Technology Stack Section with Slider -->
+            <section id="technology" class="mb-5">
+                <h2 class="text-center mb-4">Technology Stack</h2>
+                <div id="techStackCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <!-- Card 1 -->
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Natural Language Processing (NLP) Services</h5>
+                                            <ul>
+                                                <li>Text analysis and sentiment analysis</li>
+                                                <li>Language translation services</li>
+                                                <li>Named entity recognition</li>
+                                                <li>Text summarization</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card 2 -->
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Machine Learning Model Development</h5>
+                                            <ul>
+                                                <li>Custom machine learning model development tailored to specific
+                                                    business needs</li>
+                                                <li>Predictive analytics for sales forecasting, customer behavior, etc.
+                                                </li>
+                                                <li>Image recognition and classification</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card 3 -->
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Chatbot Development</h5>
+                                            <ul>
+                                                <li>Building intelligent chatbots for customer support</li>
+                                                <li>Chatbots for lead generation and sales</li>
+                                                <li>Integration with messaging platforms and websites</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <!-- Card 4 -->
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Data Analytics and Insights</h5>
+                                            <ul>
+                                                <li>Data cleaning, preprocessing, and transformation</li>
+                                                <li>Exploratory data analysis</li>
+                                                <li>Building dashboards for visualizing key metrics</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card 5 -->
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Recommendation Systems</h5>
+                                            <ul>
+                                                <li>Personalized content recommendations for e-commerce</li>
+                                                <li>Movie or music recommendations based on user preferences</li>
+                                                <li>Cross-selling and upselling recommendations</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card 6 -->
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Speech Recognition</h5>
+                                            <ul>
+                                                <li>Developing speech-to-text and text-to-speech applications</li>
+                                                <li>Voice-activated assistants for applications or devices</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <!-- Card 7 -->
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Computer Vision Services</h5>
+                                            <ul>
+                                                <li>Object detection and recognition in images and videos</li>
+                                                <li>Facial recognition for security or user authentication</li>
+                                                <li>Image and video analysis for insights</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card 8 -->
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">AI Consulting and Strategy</h5>
+                                            <ul>
+                                                <li>Providing expertise on how AI can benefit a specific business</li>
+                                                <li>Developing an AI strategy aligned with business goals</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card 9 -->
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Automation Solutions</h5>
+                                            <ul>
+                                                <li>Robotic Process Automation (RPA) for repetitive tasks</li>
+                                                <li>Workflow automation for increased efficiency</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 4 (Add more slides as needed) -->
+                    </div>
+                    <!-- Navigation controls below cards -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#techStackCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#techStackCarousel" data-slide-to="1"></li>
+                        <li data-target="#techStackCarousel" data-slide-to="2"></li>
+
+                    </ol>
+                    <a class="carousel-control-prev" href="#techStackCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#techStackCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Project Gallery Section -->
+            <!-- <section id="gallery" class="mb-5">
+                <h2 class="text-center mb-4">Project Gallery</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="gallery-item">
+                            <img src="project-1.jpg" alt="Project 1">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="gallery-item">
+                            <img src="project-2.jpg" alt="Project 2">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="gallery-item">
+                            <img src="project-3.jpg" alt="Project 3">
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+
+            <!-- <script type="text/javascript">
+                var Tawk_API = Tawk_API || {};
+                Tawk_API.visitor = {
+                    name: 'Guest',
+                    email: 'guest@example.com'
+                };
+                Tawk_API.onLoad = function () {
+                    Tawk_API.setAttributes({
+                        'name': 'Guest',
+                        'email': 'guest@example.com'
+                    }, function (error) { });
+                };
+                (function () {
+                    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+                    s1.async = true;
+                    s1.src = 'https://embed.tawk.to/83084ae352766ddf02288fc264193eb85be73bce/default';
+                    s1.charset = 'UTF-8';
+                    s1.setAttribute('crossorigin', '*');
+                    s0.parentNode.insertBefore(s1, s0);
+                })();
+            </script> -->
+
+            <!--Start of Tawk.to Script-->
+            <!--Start of Tawk.to Script-->
+            <!-- <script type="text/javascript">
+                var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+                (function () {
+                    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+                    s1.async = true;
+                    s1.src = 'https://embed.tawk.to/655cc49c91e5c13bb5b24720/1hfp600sb';
+                    s1.charset = 'UTF-8';
+                    s1.setAttribute('crossorigin', '*');
+                    s0.parentNode.insertBefore(s1, s0);
+                })();
+            </script> -->
+            <!--End of Tawk.to Script-->
+            <!--End of Tawk.to Script-->
+
+            <form id="contactForm" class="rounded p-4 shadow-lg">
+                <h2 class="text-center mb-4">Contact Us For a Free Demo</h2>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            </form>
+
+            <div class="text-center my-4">
+                <p>Ready to revolutionize your business with AI? <a href="#contactForm">Contact us</a> today!</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.counterup/1.0/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="scripts.js"></script>
+
+    <!-- <script>
+        // Counter Animation
+        $('.counter span').counterUp({ delay: 10, time: 1000 });
+    </script> -->
+</body>
+
+</html>
